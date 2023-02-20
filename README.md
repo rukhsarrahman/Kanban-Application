@@ -8,8 +8,9 @@ A Kanban Application can be defined as a software that provides visual workflow 
 3. Task Management
 4. Viewing summary for each list
 5. Reminders if tasks are due on that day via email
-6. Monthly Progress Reports on the first day of the month via email 7. Export as CSV options for both lists and tasks via email
-8. ImprovedAPIperformanceusingcaching<br><br>
+6. Monthly Progress Reports on the first day of the month via email
+7. Export as CSV options for both lists and tasks via email
+8. Improved API performance using caching<br><br>
 
 **Technologies/Frameworks Used:**<br>
 1. FlaskforAPI
