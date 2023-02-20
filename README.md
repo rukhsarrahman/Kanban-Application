@@ -13,12 +13,13 @@ A Kanban Application can be defined as a software that provides visual workflow 
 8. Improved API performance using caching<br><br>
 
 **Technologies/Frameworks Used:**<br>
-1. FlaskforAPI
-2. Flask-SecurityforTokenBasedAuthentication
-3. VueJS/ VueJS with CLI for UI
-4. Jinja2 templates for generating monthly reports and email content 5. Bootstrap for styling
-5. SQLite for database
-6. Redis for caching
-7. Redis and Celery for batch jobs and creating schedules
-8. MailHogSMTPtoolforemailtesting
-9. ChartJS for generating charts for list summary
+1. Flask for API
+2. Flask-Security for Token Based Authentication
+3. VueJS/VueJS with CLI for UI
+4. Jinja2 templates for generating monthly reports and email content
+5. Bootstrap for styling
+6. SQLite for database
+7. Redis for caching
+8. Redis and Celery for batch jobs and creating schedules
+9. MailHog SMTP tool for email testing
+10. ChartJS for generating charts for list summary
