@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @page {
+            @top-left {
+                background: #82b965;
+                content: counter(page);
+                height: 1cm;
+                text-align: center;
+                width: 1cm;
+            }
+
+            @top-center {
+                background: #82b965;
+                content: '';
+                display: block;
+                height: .05cm;
+                opacity: .5;
+                width: 100%;
+            }
+
+            @top-right {
+                content: string(heading);
+                font-size: 9pt;
+                height: 1cm;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+
+            body {
+                font-family: 'Times New Roman', serif;
+                background-color: white;
+            }
+
+            article {
+            width: 90%;
+            page-break-after: always;
+            }
+            
+            table, td, th {
+                border: 1px solid;
+            }
+
+            td, th {
+                height: 50px;
+                text-align: center;
+                vertical-align: center;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th {
+                background-color: #82b965;
+                color: white;
+            }
+
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h1 {
+                margin-top:30%;
+                margin-left: 30%;
+                font-size: 80px;
+                font-style: normal;
+            }
+            footer {
+                margin-top: 70%;
+                width: 90%;
+                color: white;
+                background-color: #82b965;
+                padding: 10px;
+                text-align: right;
+
+            }
+        </style>  
+    </head>
+    <body>
+        <article id="cover">
+            <h1>{{user['name']}}'s Monthly Report</h1>
+            <footer>
+                {{user['name']}} | {{user['email']}}
+            </footer>
+        </article>
+        <article id="Report">
+            <h2>Tasks Summary</h2>
+            <table class="center">
+                <tr>
+                  <th>List Name</th>
+                  <th>Task Title</th>
+                  <th>Task Content</th> 
+                  <th>Task Deadline</th>
+                  <th>Task Complete Date</th>
+                </tr>
+            {% for task in tasks %}
+                <tr>
+                    <td>{{task['list']}}</td>
+                    <td>{{task['title']}}</td>
+                    <td>{{task['content']}}</td>
+                    <td>{{task['deadline']}}</td>
+                    <td>{{task['complete']}}</td>
+                </tr>
+            {% endfor %}
+            </table>
+            <footer>
+                {{user['name']}} | {{user['email']}}
+            </footer>
+        </article>
+    </body>
+
+</html>

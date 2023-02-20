@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Hello, {{user["name"]}}!</p>
+        <p>You seem to have some pending tasks for today!</p>
+        {% for task in tasks %}
+            <h3>Task: {{task["title"]}}</h3>
+            <p>From List: {{task["list"]}}</p>
+            <p>Content: {{task["content"]}}</p>
+            <p>Deadline: {{task["deadline"]}}</p>
+        {% endfor %}
+        <br>
+        <p>Complete the tasks within the deadline to stay organized!</p>
+        <br>
+        <p>Regards,</p>
+        <p>Your Kanban App</p>
+    </body>
+</html>

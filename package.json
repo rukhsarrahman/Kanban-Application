@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "axios": "^1.2.0",
+    "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.23.1",
+    "chart.js": "^3.9.1",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1",
+    "vue": "^2.7.14",
+    "vue-chartjs": "^4.1.2",
+    "vue-json-to-csv": "^1.1.8"
+  }
+}
